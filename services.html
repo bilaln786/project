@@ -1,0 +1,224 @@
+<!-- services.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Our Services | The Wellness Collective</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* =====================
+           Global Styles
+           ===================== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        h1, h2 {
+            color: #0b5ed7;
+        }
+
+        /* =====================
+           Navigation Bar
+           ===================== */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2.5rem;
+            background-color: #0b5ed7;
+            color: #fff;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        /* =====================
+           Page Container
+           ===================== */
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 3rem 2rem;
+        }
+
+        .page-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        /* =====================
+           Service Section
+           ===================== */
+        .service-section {
+            background: #fff;
+            border-radius: 12px;
+            padding: 2.5rem;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+        }
+
+        .service-section h2 {
+            margin-bottom: 1.5rem;
+        }
+
+        /* =====================
+           Custom Styled Service List
+           AI-Generated Suggestion:
+           - Remove default bullets
+           - Use Flexbox for icon + text layout
+           ===================== */
+        .service-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .service-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .service-item img {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+        }
+
+        .service-item p {
+            font-size: 0.95rem;
+            color: #555;
+        }
+
+        /* =====================
+           Footer
+           ===================== */
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: #0b5ed7;
+            color: #fff;
+            margin-top: 3rem;
+            font-size: 0.9rem;
+        }
+
+        /* =====================
+           Responsive
+           ===================== */
+        @media (max-width: 768px) {
+            .service-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div><strong>The Wellness Collective</strong></div>
+        <div class="nav-links">
+            <a href="Home.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="login.html">Login</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+
+        <div class="page-title">
+            <h1>Our Specialized Care Programs</h1>
+            <p>Comprehensive therapy services designed to support movement, communication, and hearing.</p>
+        </div>
+
+        <!-- DPT Section -->
+        <section class="service-section">
+            <h2>Doctor of Physical Therapy (DPT)</h2>
+            <ul class="service-list">
+                <li class="service-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2964/2964514.png" alt="Orthopedic Rehab">
+                    <p><strong>Orthopedic Rehabilitation:</strong> Personalized therapy programs for joint injuries, post-surgical recovery, and musculoskeletal disorders.</p>
+                </li>
+                <li class="service-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2964/2964537.png" alt="Sports Therapy">
+                    <p><strong>Sports Injury Management:</strong> Evidence-based treatment focused on injury prevention, recovery, and performance optimization.</p>
+                </li>
+                <li class="service-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2964/2964563.png" alt="Pain Management">
+                    <p><strong>Pain Management:</strong> Advanced therapeutic techniques to reduce chronic pain and restore functional movement.</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- SLP Section -->
+        <section class="service-section">
+            <h2>Speech-Language Pathology (SLP)</h2>
+            <ul class="service-list">
+                <li class="service-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/4320/4320337.png" alt="Speech Therapy">
+                    <p><strong>Speech & Language Therapy:</strong> Targeted therapy to improve articulation, language development, and communication skills.</p>
+                </li>
+                <li class="service-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/4320/4320328.png" alt="Voice Therapy">
+                    <p><strong>Voice Therapy:</strong> Specialized treatment for voice disorders caused by misuse, injury, or neurological conditions.</p>
+                </li>
+                <li class="service-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/4320/4320341.png" alt="Swallowing Therapy">
+                    <p><strong>Swallowing Disorders:</strong> Clinical assessment and therapy for dysphagia to ensure safe and effective swallowing.</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- AUD Section -->
+        <section class="service-section">
+            <h2>Audiology (AUD)</h2>
+            <ul class="service-list">
+                <li class="service-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2964/2964540.png" alt="Hearing Assessment">
+                    <p><strong>Hearing Assessments:</strong> Comprehensive diagnostic testing to evaluate hearing sensitivity and auditory function.</p>
+                </li>
+                <li class="service-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2964/2964555.png" alt="Hearing Aids">
+                    <p><strong>Hearing Aid Services:</strong> Selection, fitting, and maintenance of advanced digital hearing aids.</p>
+                </li>
+                <li class="service-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2964/2964527.png" alt="Balance Testing">
+                    <p><strong>Balance & Vestibular Care:</strong> Evaluation and therapy for dizziness, balance disorders, and inner ear conditions.</p>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        Department of Computing, STMU Islamabad | © 2025 The Wellness Collective
+    </footer>
+
+</body>
+</html>

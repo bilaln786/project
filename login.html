@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login | The Wellness Collective</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* =====================
+           Global Styles
+           ===================== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0b5ed7, #0dcaf0);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* =====================
+           Login Box
+           ===================== */
+        .login-container {
+            background: #fff;
+            width: 100%;
+            max-width: 420px;
+            padding: 2.5rem;
+            border-radius: 14px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+        }
+
+        .login-container h1 {
+            text-align: center;
+            margin-bottom: 1.8rem;
+            color: #0b5ed7;
+        }
+
+        /* =====================
+           Form Elements
+           ===================== */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+        }
+
+        label {
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: #333;
+        }
+
+        input {
+            padding: 0.75rem 0.9rem;
+            border: 1.5px solid #ccc;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #0b5ed7;
+            box-shadow: 0 0 0 3px rgba(11, 94, 215, 0.2);
+        }
+
+        /* =====================
+           Button
+           ===================== */
+        button {
+            margin-top: 0.8rem;
+            padding: 0.75rem;
+            border: none;
+            border-radius: 8px;
+            background-color: #0b5ed7;
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #084298;
+        }
+
+        /* =====================
+           Links
+           ===================== */
+        .form-links {
+            margin-top: 1.2rem;
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.85rem;
+        }
+
+        .form-links a {
+            text-decoration: none;
+            color: #0b5ed7;
+        }
+
+        .form-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* =====================
+           Footer Text
+           ===================== */
+        .footer-text {
+            margin-top: 1.5rem;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="login-container">
+        <h1>Login</h1>
+
+        <!-- Login Form -->
+        <form id="loginForm">
+            <div>
+                <label for="email">Email or Username</label><br>
+                <input
+                    type="text"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email or username"
+                    required
+                >
+            </div>
+
+            <div>
+                <label for="password">Password</label><br>
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Enter your password"
+                    required
+                >
+            </div>
+
+            <button type="submit">Login</button>
+
+            <div class="form-links">
+                <a href="#">Forgot Password?</a>
+                <a href="signup.html">Don't have an account? Sign Up</a>
+            </div>
+        </form>
+
+        <div class="footer-text">
+            Department of Computing, STMU Islamabad
+        </div>
+    </div>
+
+    <!-- =====================
+         JavaScript for Login Validation
+         ===================== -->
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(e){
+            e.preventDefault(); // prevent default form submission
+
+            // Get values
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            // Check credentials
+if(email === 'bzafar407@gmail.com' && password === '12345678'){
+    // Redirect to dashboard page instead of appointments
+    window.location.href = 'dashboard.html';
+} else {
+    alert('Invalid Email or Password!');
+}
+
+        });
+    </script>
+
+</body>
+</html>

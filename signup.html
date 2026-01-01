@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up | The Wellness Collective</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* =====================
+           Global Styles
+           ===================== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0b5ed7, #0dcaf0);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        /* =====================
+           Top Navigation
+           ===================== */
+        nav.top-nav {
+            width: 100%;
+            max-width: 460px;
+            margin: 1.5rem 0 0 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        nav.top-nav a {
+            text-decoration: none;
+            color: #fff;
+            background-color: #0b5ed7;
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        nav.top-nav a:hover {
+            background-color: #084298;
+        }
+
+        /* =====================
+           Signup Box
+           ===================== */
+        .signup-container {
+            background: #fff;
+            width: 100%;
+            max-width: 460px;
+            padding: 2.8rem;
+            border-radius: 14px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+            margin-top: 1rem;
+        }
+
+        .signup-container h1 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #0b5ed7;
+        }
+
+        /* =====================
+           Form
+           ===================== */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+        }
+
+        label {
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            padding: 0.75rem 0.9rem;
+            border: 1.5px solid #ccc;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #0b5ed7;
+            box-shadow: 0 0 0 3px rgba(11, 94, 215, 0.2);
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            font-size: 0.85rem;
+            color: #333;
+        }
+
+        button {
+            margin-top: 1rem;
+            padding: 0.8rem;
+            border: none;
+            border-radius: 8px;
+            background-color: #0b5ed7;
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #084298;
+        }
+
+        .footer-text {
+            margin-top: 1.5rem;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Top Navigation: Home & Login -->
+    <nav class="top-nav">
+    <a href="Home.html">Home</a>
+    <a href="login.html">Login</a>
+</nav>
+
+
+    <!-- Signup Form Container -->
+    <div class="signup-container">
+        <h1>Create Account</h1>
+
+        <form action="#" method="post">
+            <div>
+                <label for="fullname">Full Name</label><br>
+                <input
+                    type="text"
+                    id="fullname"
+                    name="fullname"
+                    placeholder="Enter your full name"
+                    aria-label="Full Name"
+                    required
+                >
+            </div>
+
+            <div>
+                <label for="email">Email Address</label><br>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email address"
+                    aria-label="Email Address"
+                    required
+                >
+            </div>
+
+            <div>
+                <label for="password">Password</label><br>
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Create a password"
+                    aria-label="Password"
+                    required
+                >
+            </div>
+
+            <div>
+                <label for="confirm-password">Confirm Password</label><br>
+                <input
+                    type="password"
+                    id="confirm-password"
+                    name="confirm-password"
+                    placeholder="Re-enter your password"
+                    aria-label="Confirm Password"
+                    required
+                >
+            </div>
+
+            <div class="checkbox-group">
+                <input
+                    type="checkbox"
+                    id="terms"
+                    name="terms"
+                    aria-label="Agree to Terms and Conditions"
+                    required
+                >
+                <label for="terms">I agree to the Terms and Conditions</label>
+            </div>
+
+            <button type="submit">Sign Up</button>
+        </form>
+
+        <div class="footer-text">
+            Department of Computing, STMU Islamabad
+        </div>
+    </div>
+
+</body>
+</html>

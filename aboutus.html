@@ -1,0 +1,234 @@
+<!-- about.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us | The Wellness Collective</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* =====================
+           Global Styles
+           ===================== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            color: #0b5ed7;
+        }
+
+        /* =====================
+           Navigation Bar
+           ===================== */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2.5rem;
+            background-color: #0b5ed7;
+            color: #fff;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        /* =====================
+           Page Container
+           ===================== */
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 3rem 2rem;
+        }
+
+        /* =====================
+           Mission Statement
+           ===================== */
+        .mission {
+            background: linear-gradient(135deg, #0b5ed7, #0dcaf0);
+            color: #fff;
+            padding: 3rem;
+            border-radius: 14px;
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .mission h1 {
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+
+        .mission p {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: auto;
+            opacity: 0.95;
+        }
+
+        /* =====================
+           Team Section
+           ===================== */
+        .team-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        /* =====================
+           Team Member Cards (AI Generated CSS)
+           Prompt Summary:
+           - Circular profile image
+           - Horizontal layout on large screens
+           - Responsive stacking on smaller screens
+           ===================== */
+        .team-cards {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .team-card {
+            background: #fff;
+            width: 300px;
+            padding: 2rem;
+            border-radius: 16px;
+            text-align: center;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .team-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .team-card img {
+            width: 140px;
+            height: 140px;
+            object-fit: cover;
+            border-radius: 50%; /* Circular profile photo */
+            margin-bottom: 1.2rem;
+            border: 4px solid #0b5ed7;
+        }
+
+        .team-card h3 {
+            margin-bottom: 0.3rem;
+        }
+
+        .team-card p {
+            font-size: 0.95rem;
+            color: #555;
+        }
+
+        /* =====================
+           Footer
+           ===================== */
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: #0b5ed7;
+            color: #fff;
+            margin-top: 4rem;
+            font-size: 0.9rem;
+        }
+
+        /* =====================
+           Responsive
+           ===================== */
+        @media (max-width: 768px) {
+            .mission {
+                padding: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div><strong>The Wellness Collective</strong></div>
+        <div class="nav-links">
+            <a href="Home.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="login.html">Login</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+
+        <!-- Mission Statement -->
+        <section class="mission">
+            <h1>Our Mission</h1>
+            <p>
+                At <strong>The Wellness Collective</strong>, our mission is to provide
+                compassionate, evidence-based care that enhances mobility,
+                communication, and hearing. We are committed to empowering individuals
+                and families through personalized therapy services delivered by
+                highly skilled professionals.
+            </p>
+        </section>
+
+        <!-- Team Section -->
+        <section>
+            <div class="team-title">
+                <h2>Meet Our Core Team</h2>
+                <p>Experts dedicated to your health and well-being</p>
+            </div>
+
+            <div class="team-cards">
+
+                <!-- DPT -->
+                <div class="team-card">
+                    <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Dr. Ahmed Khan">
+                    <h3>Dr. Ahmed Khan</h3>
+                    <p><strong>Doctor of Physical Therapy</strong><br>Orthopedic & Sports Rehabilitation Specialist</p>
+                </div>
+
+                <!-- SLP -->
+                <div class="team-card">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Ms. Sarah Ali">
+                    <h3>Ms. Sarah Ali</h3>
+                    <p><strong>Pediatric Speech-Language Pathologist</strong><br>Speech & Language Development Expert</p>
+                </div>
+
+                <!-- AUD -->
+                <div class="team-card">
+                    <img src="https://randomuser.me/api/portraits/men/52.jpg" alt="Dr. Usman Raza">
+                    <h3>Dr. Usman Raza</h3>
+                    <p><strong>Lead Audiologist</strong><br>Hearing & Vestibular Care Specialist</p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        Department of Computing, STMU Islamabad | © 2025 The Wellness Collective
+    </footer>
+
+</body>
+</html>
